@@ -11,9 +11,29 @@
 result page
 
 <br/>
+
+Coordinates:
 <br/>
+latitude - ${param.latitude}
+<br/>
+latitude - ${param.longitude}
+<hr>
+<br/>
+time zone
 <br/>
 
+current weather in the area
+<br/>
+
+current time
+<br/>
+
+humidity
+<br/>
+
+wind speed
+
 </body>
+
 </html>
 </taglib>

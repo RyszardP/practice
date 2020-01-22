@@ -18,7 +18,12 @@ public class IndexController {
         return "index.jsp";
     }
 
-    @GetMapping(value = "/result")
+   /* @GetMapping(value = "/result")
+    public String result(){
+        return "result.jsp";
+    }
+*/
+    @RequestMapping(value="/result")
     public String result(){
         return "result.jsp";
     }
@@ -30,6 +35,7 @@ public class IndexController {
         modelAndView.addObject("result",coords);
         return modelAndView;
     }
+
 
 
 

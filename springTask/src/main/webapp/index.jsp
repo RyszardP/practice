@@ -4,11 +4,16 @@
 <body>
 <h2>Insert Latitude and Longitude</h2>
 
-<form id="coord" action="/result" method="post" modelAttribute="${coords}">
-    <p>Latitude : <input type="number" step=any id="latitude"></p>
-    <p>Longitude : <input type="number" step=any id="longitude"></p>
-    <input type="submit" value="result">
+<form action="result.jsp" method="GET">
+
+    <input type="text" name="latitude"
+           placeholder="latitude" />
+    <input type="text" name="longitude"
+           placeholder="longitude" />
+    <input type="submit" />
+
 </form>
+
 
 <br/>
 
