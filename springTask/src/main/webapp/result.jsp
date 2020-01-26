@@ -14,24 +14,24 @@ result page
 
 Coordinates:
 <br/>
-latitude - ${param.latitude}
+latitude - <c:out value="${latitude}"/>
 <br/>
-latitude - ${param.longitude}
+longitude -<c:out value="${longitude}"/>
 <hr>
 <br/>
-time zone
+time zone <c:out value="${timezone}"/>
 <br/>
 
-current weather in the area
+current weather in the area  <c:out value="${summary}"/>
 <br/>
 
-current time
+current time <c:out value="${time}"/>
 <br/>
 
-humidity
+humidity <c:out value="${humidity}"/>
 <br/>
 
-wind speed
+wind speed <c:out value="${windSpeed}"/>
 
 </body>
 

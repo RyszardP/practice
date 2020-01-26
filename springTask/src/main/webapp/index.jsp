@@ -6,10 +6,8 @@
 
 <form action="result.jsp" method="GET">
 
-    <input type="text" name="latitude"
-           placeholder="latitude" />
-    <input type="text" name="longitude"
-           placeholder="longitude" />
+    <input type="text" id="latitude" name="latitude" value="<c:out value="${selectedLatitude}" />
+    <input type="text" name="longitude" name="longitude"   value="<c:out value="${selectedLongitude}"/>
     <input type="submit" />
 
 </form>
