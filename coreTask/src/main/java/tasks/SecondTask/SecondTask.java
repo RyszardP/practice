@@ -5,9 +5,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
 
-
-public class SecondTask  extends CustomLinkedList{
-    public static void main(String[] args) throws IOException {
+public class SecondTask {
+    public static void main(String[] args)  {
 
         Reader r = new InputStreamReader(System.in);
         BufferedReader reader = new BufferedReader(r);
@@ -15,7 +14,12 @@ public class SecondTask  extends CustomLinkedList{
 
         System.out.println("Insert ten strings" + '\n');
         for (int i = 0; i < 10; i++) {
-            String s = reader.readLine();
+            String s = null;
+            try {
+                s = reader.readLine();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             linkedList.add(s);
         }
 
@@ -25,14 +29,12 @@ public class SecondTask  extends CustomLinkedList{
             System.out.println(linkedList.get(j));
         }
 
-
         linkedList.add("t",2);
         System.out.println(linkedList);
         linkedList.add("3");
         System.out.println(linkedList);
         linkedList.size();
         linkedList.get(2);
-
         linkedList.remove(2);
         System.out.println(linkedList);
     }
